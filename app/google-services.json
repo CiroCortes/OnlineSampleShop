@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "633256029703",
+    "project_id": "tiendaonlinefirebase2025",
+    "storage_bucket": "tiendaonlinefirebase2025.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633256029703:android:6257131429bb842e32c4a2",
+        "android_client_info": {
+          "package_name": "com.cirodevs.tiendaonlinefirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrAk22-MUCg9GDtHgXI8cBZ6s3Iz8G1Jk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
