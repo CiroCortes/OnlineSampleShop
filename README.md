@@ -34,7 +34,6 @@ UI consistente (modo Light) independientemente del tema del dispositivo.
 
 🧰 Stack tecnológico
 
-Kotlin 2.0
 
 Jetpack Compose (Material 3) – UI declarativa, navegación con NavHost
 
@@ -60,23 +59,9 @@ app/
 
 
 
-
-
-
-
-
-
-Ciro Devs
-
-Desarrollador Android • Kotlin fanboy
-
-📧 Email
-
-ciro.email@example.com
-
 🔗 LinkedIn
 
-https://linkedin.com/in/tu‑perfil
+https://www.linkedin.com/in/ciro-cortes-gonzalez/
 
 
 
