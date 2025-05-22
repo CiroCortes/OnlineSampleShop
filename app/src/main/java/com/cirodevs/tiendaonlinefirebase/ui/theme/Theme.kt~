@@ -37,7 +37,7 @@ private val LightColorScheme = lightColorScheme(
 fun TiendaOnlineFirebaseTheme(
     darkTheme: Boolean = false, // siempre claro isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = false, //
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {

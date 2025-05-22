@@ -1,7 +1,7 @@
 package com.cirodevs.tiendaonlinefirebase.viewmodel
 
 import androidx.lifecycle.ViewModel
-import com.cirodevs.tiendaonlinefirebase.model.UserMoldel
+import com.cirodevs.tiendaonlinefirebase.model.UserModel
 import com.google.firebase.Firebase
 import com.google.firebase.auth.auth
 import com.google.firebase.firestore.firestore
@@ -36,7 +36,7 @@ class AuthViewModel :  ViewModel() {
 
                     var userId = it.result?.user?.uid
 
-                    val userModel = UserMoldel(email, name, userId!!)
+                    val userModel = UserModel(email, name, userId!!)
                     firestore.collection("users").document(userId).set(userModel)
                         .addOnCompleteListener { dbTask ->
                             if (dbTask.isSuccessful) {

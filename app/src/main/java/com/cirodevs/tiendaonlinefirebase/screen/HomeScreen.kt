@@ -15,6 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -33,8 +34,8 @@ fun HomeScreen(modifier: Modifier,navController: NavController) {
         NavItem("Cart", Icons.Default.ShoppingCart),
         NavItem("Profile", Icons.Default.Person),
     )
-
-    var selectedIndex by remember { mutableStateOf(0) }
+    // rememberSaveable volver donde estabamos, y no al home
+    var selectedIndex by rememberSaveable { mutableStateOf(0) }
 
     Scaffold(
         bottomBar = {

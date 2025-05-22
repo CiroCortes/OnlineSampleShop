@@ -7,6 +7,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.cirodevs.tiendaonlinefirebase.pages.CategoryProductPage
+import com.cirodevs.tiendaonlinefirebase.pages.CheckOutPage
+import com.cirodevs.tiendaonlinefirebase.pages.ProductDetailsPage
 import com.cirodevs.tiendaonlinefirebase.screen.AuthScreen
 import com.cirodevs.tiendaonlinefirebase.screen.HomeScreen
 import com.cirodevs.tiendaonlinefirebase.screen.LoginScreen
@@ -42,6 +44,13 @@ fun AppNavigation(modifier: Modifier = Modifier) {
         composable ( "category-products/{categoryId}" ){
             var categoryId = it.arguments?.getString("categoryId")
             CategoryProductPage(modifier, categoryId?:"")
+        }
+        composable ("product-details/{productId}" ){
+            var productId = it.arguments?.getString("productId")
+            ProductDetailsPage(modifier, productId?:"")
+        }
+        composable ( "checkout" ){
+            CheckOutPage(  modifier   )
         }
     }
 }
